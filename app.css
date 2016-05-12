@@ -1,0 +1,22 @@
+body, html, .container {
+	height:100%;
+}
+
+.container {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#board {
+	width: 300px;
+}
+
+.cell {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 40px;
+	border: 3px dashed #229DF5;
+}

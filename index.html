@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game by unlimiworks</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="app.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<button type="button" class="close" data-dismiss="#modal" aria-hidden="true"></button>
+    				<h4 id="modal-label" class="modal-title">Token Selection</h4>
+    			</div>
+    			<div class="modal-body">
+    				<p class="text-center">Choose the token you want to play with :</p>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="signs btn btn-default" data-dismiss="modal">O</button>
+    				<button type="button" class="signs btn btn-default" data-dismiss="modal">X</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="container">
+    	<button id="restart" class='btn btn-primary'>Restart ?</button>
+    	<section id="board">
+    		<div class="row">
+    			<div id="0" class="cell col-xs-4"></div>
+    			<div id="1" class="cell col-xs-4"></div>
+    			<div id="2" class="cell col-xs-4"></div>
+    			<div id="3" class="cell col-xs-4"></div>
+    			<div id="4" class="cell col-xs-4"></div>
+    			<div id="5" class="cell col-xs-4"></div>
+    			<div id="6" class="cell col-xs-4"></div>
+    			<div id="7" class="cell col-xs-4"></div>
+    			<div id="8" class="cell col-xs-4"></div>
+    		</div>
+    	</section>
+
+    	<section class="row" >
+    		<div class="col-xs-12">
+    			<p id="outcome" class="lead text-center text-success"></p>
+    		</div>
+    	</section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
